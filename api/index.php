@@ -546,7 +546,7 @@ function parseNewTweet($tweetData){
 }
 
 $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
-$getfield = '?screen_name='.$_GET['screen_name'].'&tweet_mode=extended';
+$getfield = '?screen_name='.$_GET['screen_name'].'&tweet_mode=extended&count=10';
 // &exclude=hashtags
 $requestMethod = 'GET';
 
